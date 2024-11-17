@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item {
+            position: relative;
+            margin: 15px;
+            width: 200px;
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .item img {
+            width: 100%;
+            height: 70%;
+            border-radius: 10px 10px 0 0;
+            transition: opacity 0.3s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item:hover img {
+            opacity: 0.7;
+        }
+        .item-info {
+            padding: 10px;
+            text-align: center;
+        }
+        .price {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .contact {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .color1 { background-color: #ff9999; }
+        .color2 { background-color: #ffcc99; }
+        .color3 { background-color: #ffff99; }
+        .color4 { background-color: #ccff99; }
+        .color5 { background-color: #99ff99; }
+        .color6 { background-color: #99ffcc; }
+        .color7 { background-color: #99ccff; }
+        .color8 { background-color: #9999ff; }
+        .color9 { background-color: #cc99ff; }
+        .color10 { background-color: #ff99cc; }
+        .color11 { background-color: #ffb3b3; }
+        .color12 { background-color: #ffe6b3; }
+        .color13 { background-color: #ffffb3; }
+        .color14 { background-color: #b3ffb3; }
+        .color15 { background-color: #b3ffff; }
+        .color16 { background-color: #b3b3ff; }
+        .color17 { background-color: #d1b3ff; }
+        .color18 { background-color: #ffb3d1; }
+        .color19 { background-color: #ffccff; }
+        .color20 { background-color: #ffcccc; }
+    </style>
+</head>
+<body>
+    <h1>Clothing Store</h1>
+    
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#aboutus">About Us</a>
+        <a href="#bonus">Bonus</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container" id="home">
+        <div class="item color1">
+            <img src="images2.jpeg" alt="Clothing 1">
+            <div class="item-info">
+                <h3>Stylish Shirt</h3>
+                <p class="price">$29.99</p>
+                <p>Comfortable and stylish shirt for everyday wear.</p>
+            </div>
+        </div>
+        <div class="item color2">
+            <img src="05536331700-p.jpg" alt="Clothing 2">
+            <div class="item-info">
+                <h3>Casual Trousers</h3>
+                <p class="price">$39.99</p>
+                <p>Perfect for both casual and formal occasions.</p>
+            </div>
+        </div>
+        <div class="item color3">
+            <img src="download (12).jpeg" alt="Clothing 3">
+            <div class="item-info">
+                <h3>Summer Dress</h3>
+                <p class="price">$49.99</p>
+                <p>Light and breezy dress for summer outings.</p>
+            </div>
+        </div>
+        <div class="item color4">
+            <img src="download (2).jpeg" alt="Clothing 4">
+            <div class="item-info">
+                <h3>Denim Jacket</h3>
+                <p class="price">$59.99</p>
+                <p>A stylish jacket that goes well with any outfit.</p>
+            </div>
+        </div>
+        <div class="item color5">
+            <img src="download (6).jpeg" alt="Clothing 5">
+            
+            <div class="item-info">
+                <h3>Graphic Tee</h3>
+                <p class="price">$19.99</p>
+                <p>Trendy graphic tee for casual wear.</p>
+            </div>
+        </div>
+        <div class="item color6">
+            <img src="download (8).jpeg" alt="Clothing 6">
+            <div class="item-info">
+                <h3>Formal Blazer</h3>
+                <p class="price">$89.99</p>
+                <p>Elevate your style with this elegant blazer.</p>
+            </div>
+        </div>
+        <div class="item color7">
+            <img src="download (9).jpeg" alt="Clothing 7">
+            <div class="item-info">
+                <h3>Cozy Sweater</h3>
+                <p class="price">$39.99</p>
+                <p>Stay warm and stylish with this cozy sweater.</p>
+            </div>
+        </div>
+        <div class="item color8">
+            <img src="download (10).jpeg" alt="Clothing 8">
+            <div class="item-info">
+                <h3>Skirt</h3>
+                <p class="price">$29.99</p>
+                <p>Chic skirt perfect for any occasion.</p>
+            </div>
+        </div>
+        <div class="item color9">
+            <img src="download (11).jpeg" alt="Clothing 9">
+            <div class="item-info">
+                <h3>Shorts</h3>
+                <p class="price">$24.99</p>
+                <p>Comfortable shorts for summer days.</p>
+            </div>
+        </div>
+        <div class="item color10">
+            <img src="download (13).jpeg" alt="Clothing 10">
+            <div class="item-info">
+                <h3>Winter Coat</h3>
+                <p class="price">$99.99</p>
+                <p>Keep warm with this stylish winter coat.</p>
+            </div>
+        </div>
+        <div class="item color11">
+            <img src="download.jpeg" alt="Clothing 11">
+            <div class="item-info">
+                <h3>Floral Top</h3>
+                <p class="price">$34.99</p>
+                <p>A beautiful floral top for a fresh look.</p>
+            </div>
+        </div>
+        <div class="item color12">
+            <img src="download (22).jpeg" alt="Clothing 12">
+            <div class="item-info">
+                <h3>Chino Pants</h3>
+                <p class="price">$44.99</p>
+                <p>Versatile chinos for a smart casual look.</p>
+            </div>
+        </div>
+        <div class="item color13">
+            <img src="download (15).jpeg" alt="Clothing 13">
+            <div class="item-info">
+                <h3>Hoodie</h3>
+                <p class="price">$49.99</p>
+                <p>Stay cozy with this stylish hoodie.</p>
+            </div>
+        </div>
+        <div class="item color14">
+            <img src="download (16).jpeg" alt="Clothing 14">
+            <div class="item-info">
+                <h3>Jumpsuit</h3>
+                <p class="price">$59.99</p>
+                <p>Trendy jumpsuit for a chic look.</p>
+            </div>
+        </div>
+        <div class="item color15">
+            <img src="download (17).jpeg" alt="Clothing 15">
+            <div class="item-info">
+                <h3>Activewear Set</h3>
+                <p class="price">$69.99</p>
+                <p>Perfect for workouts and casual outings.</p>
+            </div>
+        </div>
+        <div class="item color16">
+            <img src="download (18).jpeg" alt="Clothing 16">
+            <div class="item-info">
+                <h3>Beachwear</h3>
+                <p class="price">$39.99</p>
+                <p>Stylish beachwear for summer vacations.</p>
+            </div>
+        </div>
+        <div class="item color17">
+            <img src="twin-bir.avif" "alt="Clothing 17">
+            <div class="item-info">
+                <h3>Leggings</h3>
+                <p class="price">$29.99</p>
+                <p>Comfortable leggings for everyday wear.</p>
+            </div>
+        </div>
+        <div class="item color18">
+            <img src="download (20).jpeg" alt="Clothing 18">
+            <div class="item-info">
+                <h3>Casual Shoes</h3>
+                <p class="price">$59.99</p>
+                <p>Stylish shoes for a casual day out.</p>
+            </div>
+        </div>
+        <div class="item color19">
+            <img src="images.jpeg" alt="Clothing 19">
+            <div class="item-info">
+                <h3>Sandals</h3>
+                <p class="price">$24.99</p>
+                <p>Comfortable sandals for sunny days.</p>
+            </div>
+        </div>
+        <div class="item color20">
+            <img src="download (21).jpeg" alt="Clothing 20">
+            <div class="item-info">
+                <h3>Wool Scarf</h3>
+                <p class="price">$19.99</p>
+                <p>Keep warm with this stylish wool scarf.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@clothingstore.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Follow us on social media!</p>
+    </div>
+
+    <div class="aboutus" id="aboutus">
+        <h2>About Us</h2>
+        <p>We are a leading clothing store offering the latest trends and styles at affordable prices. Our mission is to provide high-quality clothing that makes our customers feel confident and stylish.</p>
+    </div>
+
+    <div class="bonus" id="bonus">
+        <h2>Bonus Offers</h2>
+        <p>Sign up for our newsletter to receive exclusive discounts and offers!</p>
+    </div>
+</body>
+</html>
